@@ -140,3 +140,4 @@ Desenvolver um site para a cafeteria fictícia Espresso Royale, com identidade v
 - [22/08/2026] Página inicial completa criada: hero, produtos, qualidade, experiência e rodapé
 - [22/08/2026] Rodapé ampliado com navegação, horários, newsletter, redes sociais e informações legais
 - [22/08/2026] README atualizado com status da home e plano de finalização das páginas restantes
+- [22/08/2026] Logo do rodapé ajustado com fundo integrado e contorno claro
