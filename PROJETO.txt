@@ -1,0 +1,15 @@
+=== PROJETO BEAN & BREW CAFÉ ===
+
+Arquivos principais:
+- index.html (página HTML)
+- styles.css (estilos CSS)
+- paleta_cores.md (paleta de cores)
+- prototipo.md (guia de protótipo)
+- APRESENTACAO.md (apresentação)
+- README.md (instruções)
+
+Paleta de cores:
+Principal: #6F4E37 (Marrom Café)
+Secundária: #C4A484 (Marrom Claro)
+Destaque: #D4A373 (Ouro Queimado)
+Fundo: #F5F5F5 (Cinza Muito Claro)

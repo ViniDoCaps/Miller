@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean & Brew Café</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header com Navbar -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Rua do Café, 123 - São Paulo, SP</span>
+                </div>
+                <div class="contact-info">
+                    <span><i class="fas fa-phone"></i> (11) 99999-9999</span>
+                    <span><i class="fas fa-clock"></i> 07h - 19h</span>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Bean<span class="logo-accent">Brew</span></h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#team">Equipe</a></li>
+                    <li><a href="#testimonials">Depoimentos</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                </div>
+                <div class="nav-toggle"><span></span><span></span><span></span></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>Artesão do Aroma Perfeito</h2>
+                <p>Experiência única com cafés artesanais, selecionados com carinho</p>
+                <a href="#menu" class="btn btn-primary">Ver Cardápio</a>
+                <a href="#about" class="btn btn-secondary">Conhecer Mais</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <h3 class="section-title">Nosso Cardápio</h3>
+            <p class="section-subtitle">Cafés selecionados com os melhores grãos</p>
+            <div class="menu-grid">
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1504674900247-087769a9808b?w=500&h=300&fit=crop" alt="Espresso">
+                    <div class="menu-info">
+                        <h4>Espresso Clássico</h4>
+                        <p class="description">Café expresso puro e intenso</p>
+                        <p class="price">.90</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1556912994-9e4e4c6f8a2e?w=500&h=300&fit=crop" alt="Cappuccino">
+                    <div class="menu-info">
+                        <h4>Cappuccino</h4>
+                        <p class="description">Espuma cremosa e café perfeito</p>
+                        <p class="price">.50</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=500&h=300&fit=crop" alt="Latte">
+                    <div class="menu-info">
+                        <h4>Latte Artesanal</h4>
+                        <p class="description">Leite vaporizado com design personalizado</p>
+                        <p class="price">.20</p>
+                    </div>
+                </div>
+                <div class="menu-card">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396934d4c8?w=500&h=300&fit=crop" alt="Mocha">
+                    <div class="menu-info">
+                        <h4>Mocha Especiado</h4>
+                        <p class="description">Chocolate quente com toque de canela</p>
+                        <p class="price">.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="section-title">Sobre o Bean & Brew</h3>
+                    <p>Nossa cafeteria nasceu com a paixão de criar experiências memoráveis através do café.</p>
+                    <p>Cada grão é selecionado com cuidado e torrado com técnica artesanal para garantir o melhor sabor.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Café 100% artesanal</li>
+                        <li><i class="fas fa-check"></i> Ingredientes selecionados</li>
+                        <li><i class="fas fa-check"></i> Atendimento personalizado</li>
+                        <li><i class="fas fa-check"></i> Ambiente acolhedor</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Venha nos visitar</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop" alt="Cafeteria Bean & Brew">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Time -->
+    <section class="team-section" id="team">
+        <div class="container">
+            <h3 class="section-title">Nossa Equipe</h3>
+            <p class="section-subtitle">Profissionais apaixonados pelo café</p>
+            <div class="team-grid">
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&circle=1" alt="Barista">
+                    <h4>Marcos Silva</h4>
+                    <p>Barista Head</p>
+                    <div class="social">
+                        <a href="#" class="social-small"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-small"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop&circle=1" alt="Pastry Chef">
+                    <h4>Ana Clara</h4>
+                    <p>Confeiteira</p>
+                    <div class="social">
+                        <a href="#" class="social-small"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-small"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Depoimentos com barra de scroll -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h3 class="section-title">O que Nossos Clientes Dizem</h3>
+            <p class="section-subtitle">Avaliações de quem já experimentou</p>
+            <div class="testimonials-carousel">
+                <div class="testimonial-slider">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"O melhor café da cidade! O atendimento é impecável e o ambiente é perfeito para estudar."</p>
+                            <h4>Cliente 1</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"Adoro os meus lattes artesanais. Recomendo demais para todos que amam café!"</p>
+                            <h4>Cliente 2</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <p>"Um oásis para quem trabalha em casa. Café doce e internet rápida!"</p>
+                            <h4>Cliente 3</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <div class="nav-dot active" data-index="0"></div>
+                    <div class="nav-dot" data-index="1"></div>
+                    <div class="nav-dot" data-index="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 class="section-title">Entre em Contato</h3>
+                    <p class="contact-text">Estamos sempre felizes para receber novos clientes e ouvir suas opiniões.</p>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Rua do Café, 123 - São Paulo, SP</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>(11) 99999-9999</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>contato@beanbrewcafe.com.br</span>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Seu nome" required>
+                        <input type="email" placeholder="Seu e-mail" required>
+                        <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-brand">
+                    <h3>Bean<span class="logo-accent">Brew</span></h3>
+                    <p>Artesão do aroma perfeito desde 2020</p>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="footer-social-icon"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Úteis</h4>
+                    <a href="#home">Início</a>
+                    <a href="#menu">Cardápio</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#contact">Contato</a>
+                </div>
+                <div class="footer-hours">
+                    <h4>Horário</h4>
+                    <p>Segunda a Sexta: 07h - 19h</p>
+                    <p>Sábado: 08h - 18h</p>
+                    <p>Domingo: Fechado</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Bean & Brew Café. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

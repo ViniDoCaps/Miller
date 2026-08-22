@@ -1,0 +1,1 @@
+const fs = require('fs'); const pdf = require('pdf-parse'); const pdfPath = 'C:/Users/Administrador/Downloads/Atividade tec inf 2B DESIGN.pdf'; const data = fs.readFileSync(pdfPath); pdf(data).then(result => { console.log('=== CONTEÚDO DA ATIVIDADE ==='); console.log(result.text); }).catch(err => console.error('Erro:', err.message));
