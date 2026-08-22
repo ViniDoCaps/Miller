@@ -1,1 +1,0 @@
-const fs = require('fs'); const pdf = require('pdf-parse'); (async () => { const data = fs.readFileSync('C:/Users/Administrador/Downloads/Atividade tec inf 2B DESIGN.pdf'); const result = await pdf(data); console.log(result.text); })().catch(e => console.error(e));
