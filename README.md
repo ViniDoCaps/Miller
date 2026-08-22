@@ -1,7 +1,7 @@
-# Bean & Brew Café - Página Web
+# Espresso Royale - Página Web
 
 ## Objetivo do Trabalho
-Desenvolver uma página web para uma cafeteria com identidade visual profissional, inspirada no We Coffee.
+Desenvolver um site para a cafeteria fictícia Espresso Royale, com identidade visual profissional e premium, inspirado na linguagem minimalista da [We Coffee](https://wecoffee.com.br/).
 
 ---
 
@@ -23,27 +23,28 @@ Desenvolver uma página web para uma cafeteria com identidade visual profissiona
 
 ### Páginas Planejadas
 
-1. **index.html** - Página Inicial
-   - Header com logo e menu
-   - Banner hero com imagem de fundo
-   - Preview do cardápio
-   - Sobre resumido
-   - Footer
+1. **index.html** - Página Inicial ✅
+   - Header compartilhado com logo, navegação, redes sociais e indicador da página ativa
+   - Banner hero com chamadas para ação
+   - Destaques de cafés, doces e brunch
+   - Seção sobre qualidade e frescor
+   - Seção de experiência no espaço
+   - Footer completo com navegação, horários, newsletter, redes sociais e links legais
 
-2. **cardapio.html** - Cardápio
+2. **cardapio.html** - Cardápio ⏳
    - Header com menu
    - Seção de cafés clássicos
    - Bebidas especiais
    - Doces artesanais
    - Footer
 
-3. **avaliacoes.html** - Avaliações
+3. **avaliacoes.html** - Avaliações ⏳
    - Header com menu
    - Slider de depoimentos
    - Contador de estrelas
    - Footer
 
-4. **galeria.html** - Galeria
+4. **galeria.html** - Galeria ⏳
    - Header com menu
    - Grid de imagens do local
    - Footer
@@ -52,10 +53,50 @@ Desenvolver uma página web para uma cafeteria com identidade visual profissiona
 
 ## Organização por Página
 
+### Estado atual
+
+- `index.html` e `styles.css` estão implementados e formam a referência visual do projeto.
+- As páginas de Cardápio, Avaliações e Galeria já possuem o header compartilhado e a navegação ativa correta, mas ainda precisam do conteúdo principal e do footer.
+- Os logos usados no header estão na pasta `images/`.
+- As fotos da home usam URLs externas do Unsplash e podem ser trocadas posteriormente por fotos próprias da cafeteria.
+
 ### Cada página terá:
-- HTML estruturado
-- CSS dedicado (styles.css ou page-specific.css)
-- JavaScript interativo (script.js ou page-specific.js)
+
+- HTML estruturado e acessível
+- Estilos centralizados em `styles.css`, reutilizando a identidade já criada
+- JavaScript apenas onde houver interação real, como carrossel ou filtros
+
+---
+
+## Próximos Passos Recomendados
+
+### 1. Finalizar `cardapio.html`
+
+- Criar banner de abertura com título “Nosso Cardápio”
+- Criar filtros por categoria: Cafés, Gelados, Chás, Doces e Brunch
+- Adicionar cards com foto, descrição, preço e destaque para favoritos da casa
+- Reutilizar o footer da página inicial
+
+### 2. Finalizar `avaliacoes.html`
+
+- Criar resumo da nota média e quantidade de avaliações
+- Adicionar cards de depoimentos com nome, estrelas e comentário
+- Implementar um carrossel simples com JavaScript, se necessário
+- Reutilizar o footer da página inicial
+
+### 3. Finalizar `galeria.html`
+
+- Criar hero curto apresentando o ambiente
+- Montar uma grade responsiva de fotos de bebidas, doces e espaço
+- Adicionar efeito de zoom e, opcionalmente, visualização ampliada ao clicar em uma foto
+- Reutilizar o footer da página inicial
+
+### 4. Revisão final
+
+- Trocar conteúdos de exemplo por endereço, WhatsApp, horários e redes sociais reais
+- Substituir as fotos externas por fotos próprias, caso estejam disponíveis
+- Testar links, responsividade e navegação em celular
+- Ajustar a newsletter para funcionar com um serviço ou backend, se desejado
 
 ---
 
@@ -93,5 +134,9 @@ Desenvolver uma página web para uma cafeteria com identidade visual profissiona
 - [22/08/2026] Estrutura do projeto definida
 - [22/08/2026] Paleta de cores aprovada
 - [22/08/2026] Páginas planejadas
-
-
+- [22/08/2026] Nome da Cafeteria (Espresso Royale)
+- [22/08/2026] Header compartilhado criado com navegação e indicador da página ativa
+- [22/08/2026] Logos fornecidos adicionados ao header
+- [22/08/2026] Página inicial completa criada: hero, produtos, qualidade, experiência e rodapé
+- [22/08/2026] Rodapé ampliado com navegação, horários, newsletter, redes sociais e informações legais
+- [22/08/2026] README atualizado com status da home e plano de finalização das páginas restantes
