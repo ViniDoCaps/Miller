@@ -5,3 +5,36 @@
 .published-reviews__heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; margin-bottom: 2rem; }.reviews-badge { padding: .45rem .65rem; color: #89603c; background: #f4e5d3; font: 700 .58rem/1 'Montserrat', sans-serif; letter-spacing: .08em; text-transform: uppercase; }.review-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }.review-card { padding: 1.5rem; border-top: 2px solid var(--gold); background: #fff; box-shadow: 0 8px 25px rgba(78, 54, 39, .06); }.review-card__top { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; }.review-card__name { margin: 0; color: var(--coffee); font: 700 1.25rem/1.1 'Playfair Display', Georgia, serif; }.review-card__date { color: #9b8c82; font: 500 .62rem/1 'Montserrat', sans-serif; }.review-card__stars { margin: .65rem 0; color: var(--gold); letter-spacing: .08em; }.review-card__text { margin: 0; color: #5c514b; font: 500 .78rem/1.7 'Montserrat', sans-serif; overflow-wrap: anywhere; }.review-empty { margin: 0; padding: 2rem; color: #756d67; text-align: center; border: 1px dashed #cdbdad; font: 500 .8rem/1.7 'Montserrat', sans-serif; }.reviews-cta { display: flex; align-items: center; justify-content: space-between; gap: 2rem; padding: clamp(4.5rem, 8vw, 7.5rem) clamp(1.5rem, 10vw, 12rem); background: var(--coffee); }.reviews-cta .eyebrow { color: #e7b678; }.reviews-cta h2 { margin: 0; color: #fff; }
 @media (max-width: 900px) { .reviews-summary { grid-template-columns: .9fr .65fr; gap: 2rem 4rem; }.reviews-summary__intro { grid-column: 1 / -1; }.review-area { gap: 3rem; }.review-list { grid-template-columns: 1fr; } }
 @media (max-width: 650px) { .reviews-hero { min-height: 560px; padding: 4rem 1.5rem; }.reviews-summary { grid-template-columns: 1fr; gap: 2.5rem; }.reviews-summary__intro { grid-column: auto; }.rating-distribution { width: 100%; }.review-area { grid-template-columns: 1fr; }.published-reviews__heading, .reviews-cta { align-items: flex-start; flex-direction: column; }.review-form-card { padding: 2rem 1.4rem; } }
+
+/* MicrointeraÃ§Ãµes e entradas suaves */
+
+@keyframes reviews-fade-up {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reviews-hero__content { animation: reviews-fade-up .75s cubic-bezier(.22, 1, .36, 1) both; }
+.reviews-summary__intro, .reviews-summary__score, .rating-distribution { animation: reviews-fade-up .75s cubic-bezier(.22, 1, .36, 1) both; }
+.reviews-summary__score { animation-delay: .1s; }
+.rating-distribution { animation-delay: .18s; }
+.review-form-card { animation: reviews-fade-up .75s .08s cubic-bezier(.22, 1, .36, 1) both; transition: transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .35s ease; }
+.review-form-card:hover { transform: translateY(-4px); box-shadow: 0 22px 55px rgba(78, 54, 39, .14); }
+.published-reviews { animation: reviews-fade-up .75s .16s cubic-bezier(.22, 1, .36, 1) both; }
+.reviews-cta > div { animation: reviews-fade-up .75s .08s cubic-bezier(.22, 1, .36, 1) both; }
+.reviews-cta > .button { animation: reviews-fade-up .75s .16s cubic-bezier(.22, 1, .36, 1) both; }
+
+.form-field input, .form-field textarea { transition: border-color .2s ease, box-shadow .2s ease; }
+.form-field input:focus, .form-field textarea:focus { box-shadow: 0 2px 0 var(--coffee); }
+.review-form-card .button[aria-busy] { cursor: progress; opacity: .72; }
+.review-form-card .button span, .reviews-cta .button span { transition: transform .2s ease; }
+.review-form-card .button:hover span, .reviews-cta .button:hover span { transform: translateX(4px); }
+
+.review-card { animation: reviews-fade-up .55s cubic-bezier(.22, 1, .36, 1) both; transition: transform .3s cubic-bezier(.22, 1, .36, 1), box-shadow .3s ease, border-color .3s ease; }
+.review-card:hover { transform: translateY(-4px); border-top-color: var(--coffee); box-shadow: 0 16px 35px rgba(78, 54, 39, .12); }
+.review-card:nth-child(2) { animation-delay: .07s; }
+.review-card:nth-child(3) { animation-delay: .14s; }
+.review-card:nth-child(4) { animation-delay: .21s; }
+.review-empty { animation: reviews-fade-up .55s cubic-bezier(.22, 1, .36, 1) both; transition: border-color .2s ease, background-color .2s ease; }
+.review-empty:hover { border-color: var(--gold); background: #fffaf5; }
+
+button:focus-visible, a:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
