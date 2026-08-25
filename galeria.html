@@ -3,110 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o ambiente, os cafés e os momentos do Espresso Royale.">
   <title>Espresso Royale | Galeria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="galeria.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">
-      <img class="brand__mark" src="images/LogoCafeteria.png" alt="">
-      <span>Espresso Royale</span>
-    </a>
-    <nav class="main-nav">
-      <a href="index.html">Início</a>
-      <a href="cardapio.html">Cardápio</a>
-      <a href="avaliacoes.html">Avaliações</a>
-      <a class="is-active" href="galeria.html">Galeria</a>
-    </nav>
-    <nav class="social-nav">
-      <a href="#" aria-label="Instagram"><img src="images/LogoInstagram.png" alt=""></a>
-      <a href="#" aria-label="TikTok"><img src="images/LogoTikTok.png" alt=""></a>
-      <a href="#" aria-label="Facebook"><img src="images/LogoFacebook.png" alt=""></a>
-      <a href="#" aria-label="YouTube"><img src="images/LogoYoutube.png" alt=""></a>
-      <a href="#" aria-label="WhatsApp"><img src="images/logoWhatsapp.png" alt=""></a>
-    </nav>
+    <a class="brand" href="index.html" aria-label="Espresso Royale - início"><img class="brand__mark" src="images/LogoCafeteria.png" alt=""><span>Espresso Royale</span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a><a href="avaliacoes.html">Avaliações</a><a class="is-active" href="galeria.html" aria-current="page">Galeria</a></nav>
+    <nav class="social-nav" aria-label="Redes sociais"><a href="#" aria-label="Instagram"><img src="images/LogoInstagram.png" alt=""></a><a href="#" aria-label="TikTok"><img src="images/LogoTikTok.png" alt=""></a><a href="#" aria-label="Facebook"><img src="images/LogoFacebook.png" alt=""></a><a href="#" aria-label="YouTube"><img src="images/LogoYoutube.png" alt=""></a><a href="#" aria-label="WhatsApp"><img src="images/logoWhatsapp.png" alt=""></a></nav>
   </header>
 
   <main>
-    <section class="gallery-hero">
-      <div class="gallery-hero__content">
-        <h1>Nossa Galeria</h1>
-        <p>Conheça o espaço que combina sabor e aconchego</p>
-      </div>
-    </section>
+    <section class="gallery-hero" aria-labelledby="gallery-title"><div class="gallery-hero__content"><p class="eyebrow">Um convite para ficar</p><h1 id="gallery-title">Entre, sente<br><em>e fique à vontade.</em></h1><p>Um pouco do que acontece entre um café passado na hora e uma conversa que não tem pressa.</p></div><span class="gallery-hero__label">Espresso Royale<br><strong>por dentro</strong></span></section>
 
-    <section class="gallery-section section">
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&q=85" alt="Café sendo servido">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1556912993-4e6c3c5e3c8d?w=600&q=85" alt="Doces artesanais">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=85" alt="Interior acolhedor">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&q=85" alt="Brunch da manhã">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?w=600&q=85" alt="Cafeteria comunitária">
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=600&q=85" alt="Barista preparando café">
-        </div>
-      </div>
-    </section>
+    <section class="gallery-intro section"><div><p class="eyebrow">Olhe ao redor</p><h2>Pequenos detalhes.<br>Grandes pausas.</h2></div><p>Da textura dos grãos ao cantinho preferido da janela, cada parte da casa foi pensada para tornar seu momento mais gostoso.</p></section>
+
+    <section class="gallery-showcase"><div class="gallery-showcase__image"><span>01 / atmosfera</span></div><div class="gallery-showcase__content"><p class="eyebrow">O jeito Espresso Royale</p><h2>Um espaço que<br>convida a ficar.</h2><p>Tem lugar para a conversa demorada, para o trabalho concentrado e para aquela pausa que você nem sabia que precisava.</p><div class="gallery-stats"><div><strong>08h</strong><span>primeiro café</span></div><div><strong>20h</strong><span>última conversa</span></div><div><strong>∞</strong><span>bons momentos</span></div></div></div></section>
+
+    <section class="gallery-section section" aria-labelledby="gallery-grid-title"><div class="gallery-toolbar"><h2 id="gallery-grid-title">Momentos da casa</h2><div class="gallery-filters" role="group" aria-label="Filtrar galeria"><button class="gallery-filter is-active" type="button" data-filter="all" aria-pressed="true">Tudo</button><button class="gallery-filter" type="button" data-filter="coffee" aria-pressed="false">Cafés</button><button class="gallery-filter" type="button" data-filter="space" aria-pressed="false">O espaço</button><button class="gallery-filter" type="button" data-filter="sweet" aria-pressed="false">Doces & brunch</button></div></div><div class="gallery-grid">
+      <button class="gallery-item gallery-item--large" type="button" data-category="coffee" data-title="Café passado na hora" data-caption="O ritual começa na escolha do grão."><img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1200&q=85" alt="Xícara de café sobre mesa de madeira"><span class="gallery-item__caption"><strong>Café passado na hora</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+      <button class="gallery-item" type="button" data-category="space" data-title="Um canto para desacelerar" data-caption="Luz boa, mesa tranquila e tempo para você."><img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=900&q=85" alt="Interior aconchegante de cafeteria"><span class="gallery-item__caption"><strong>Um canto para desacelerar</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+      <button class="gallery-item" type="button" data-category="sweet" data-title="Feito todos os dias" data-caption="Nossa vitrine muda, o carinho permanece."><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=85" alt="Folhados artesanais recém-assados"><span class="gallery-item__caption"><strong>Feito todos os dias</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+      <button class="gallery-item" type="button" data-category="coffee" data-title="Detalhes que fazem diferença" data-caption="Cada bebida preparada com atenção."><img src="https://images.unsplash.com/photo-1512568400610-62da28bc8a13?auto=format&fit=crop&w=900&q=85" alt="Barista preparando café"><span class="gallery-item__caption"><strong>Detalhes que fazem diferença</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+      <button class="gallery-item gallery-item--wide" type="button" data-category="sweet" data-title="Mesa cheia de boas ideias" data-caption="Um brunch fica melhor quando é compartilhado."><img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=85" alt="Mesa com brunch e café"><span class="gallery-item__caption"><strong>Mesa cheia de boas ideias</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+      <button class="gallery-item" type="button" data-category="space" data-title="Seu lugar favorito" data-caption="Chegue como cliente, volte como parte da casa."><img src="https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=900&q=85" alt="Mesas de cafeteria com luz natural"><span class="gallery-item__caption"><strong>Seu lugar favorito</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+      <button class="gallery-item" type="button" data-category="coffee" data-title="A pausa começa aqui" data-caption="Aroma de café e uma boa conversa."><img src="https://images.unsplash.com/photo-1497515114629-f71d768fd07c?auto=format&fit=crop&w=900&q=85" alt="Café coado sendo preparado"><span class="gallery-item__caption"><strong>A pausa começa aqui</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+      <button class="gallery-item" type="button" data-category="sweet" data-title="Um doce intervalo" data-caption="Para acompanhar o café sem pressa."><img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=85" alt="Bolo de chocolate artesanal"><span class="gallery-item__caption"><strong>Um doce intervalo</strong><small>Ver imagem ampliada&nbsp; ↗</small></span></button>
+    </div><p class="gallery-empty" hidden>Nenhuma foto encontrada nessa categoria.</p></section>
+
+    <section class="gallery-cta"><div><p class="eyebrow">Venha viver de perto</p><h2>A melhor foto ainda<br>pode ser a sua.</h2></div><a class="button button--light" href="avaliacoes.html">Conte sua experiência <span>→</span></a></section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-main">
-      <div class="footer-brand">
-        <a class="brand" href="index.html">
-          <img class="brand__mark" src="images/LogoCafeteria.png" alt="">
-          <span>Espresso Royale</span>
-        </a>
-        <p>Seu ponto de pausa, encontro e café especial.</p>
-        <div class="footer-socials" aria-label="Redes sociais">
-          <a href="#" aria-label="Instagram"><img src="images/LogoInstagram.png" alt=""></a>
-          <a href="#" aria-label="TikTok"><img src="images/LogoTikTok.png" alt=""></a>
-          <a href="#" aria-label="Facebook"><img src="images/LogoFacebook.png" alt=""></a>
-          <a href="#" aria-label="YouTube"><img src="images/LogoYoutube.png" alt=""></a>
-        </div>
-      </div>
-      <div class="footer-column">
-        <h3>Explore</h3>
-        <a href="index.html">Início</a>
-        <a href="cardapio.html">Cardápio</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="avaliacoes.html">Avaliações</a>
-      </div>
-      <div class="footer-column">
-        <h3>Atendimento</h3>
-        <p>Terça a sexta<br><strong>08h às 20h</strong></p>
-        <p>Sábado e domingo<br><strong>09h às 19h</strong></p>
-        <a href="#">Como chegar <span>→</span></a>
-      </div>
-      <div class="footer-column footer-newsletter">
-        <h3>Receba novidades</h3>
-        <p>Novos sabores, eventos e boas histórias direto no seu e-mail.</p>
-        <form>
-          <label class="sr-only" for="newsletter-email">Seu melhor e-mail</label>
-          <input id="newsletter-email" type="email" placeholder="Seu e-mail" required>
-          <button type="submit" aria-label="Cadastrar e-mail">→</button>
-        </form>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <small>© 2026 Espresso Royale. Todos os direitos reservados.</small>
-      <div>
-        <a href="#">Política de privacidade</a>
-        <a href="#">Termos de uso</a>
-        <a href="#">Acessibilidade</a>
-      </div>
-      <small>Feito com café e carinho.</small>
-    </div>
-  </footer>
+  <footer class="site-footer"><div class="footer-main"><div class="footer-brand"><a class="brand" href="index.html"><img class="brand__mark" src="images/LogoCafeteria.png" alt=""><span>Espresso Royale</span></a><p>Seu ponto de pausa, encontro e café especial.</p><div class="footer-socials" aria-label="Redes sociais"><a href="#" aria-label="Instagram"><img src="images/LogoInstagram.png" alt=""></a><a href="#" aria-label="TikTok"><img src="images/LogoTikTok.png" alt=""></a><a href="#" aria-label="Facebook"><img src="images/LogoFacebook.png" alt=""></a><a href="#" aria-label="YouTube"><img src="images/LogoYoutube.png" alt=""></a></div></div><div class="footer-column"><h3>Explore</h3><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a><a href="galeria.html">Galeria</a><a href="avaliacoes.html">Avaliações</a></div><div class="footer-column"><h3>Atendimento</h3><p>Terça a sexta<br><strong>08h às 20h</strong></p><p>Sábado e domingo<br><strong>09h às 19h</strong></p><a href="#">Como chegar <span>→</span></a></div><div class="footer-column footer-newsletter"><h3>Receba novidades</h3><p>Novos sabores, eventos e boas histórias direto no seu e-mail.</p><form><label class="sr-only" for="newsletter-email">Seu melhor e-mail</label><input id="newsletter-email" type="email" placeholder="Seu e-mail" required><button type="submit" aria-label="Cadastrar e-mail">→</button></form></div></div><div class="footer-bottom"><small>© 2026 Espresso Royale. Todos os direitos reservados.</small><div><a href="#">Política de privacidade</a><a href="#">Termos de uso</a><a href="#">Acessibilidade</a></div><small>Feito com café e carinho.</small></div></footer>
+  <script src="galeria.js"></script>
 </body>
 </html>
