@@ -1,3 +1,56 @@
 <!doctype html>
-<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Espresso Royale | Cardápio</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head>
-<body><header class="site-header"><a class="brand" href="index.html" aria-label="Espresso Royale - início"><img class="brand__mark" src="images/LogoCafeteria.png" alt=""><span>Espresso Royale</span></a><nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a class="is-active" href="cardapio.html" aria-current="page">Cardápio</a><a href="avaliacoes.html">Avaliações</a><a href="galeria.html">Galeria</a></nav><nav class="social-nav" aria-label="Redes sociais"><a href="#" aria-label="Instagram"><img src="images/LogoInstagram.png" alt=""></a><a href="#" aria-label="TikTok"><img src="images/LogoTikTok.png" alt=""></a><a href="#" aria-label="Facebook"><img src="images/LogoFacebook.png" alt=""></a><a href="#" aria-label="YouTube"><img src="images/LogoYoutube.png" alt=""></a><a href="#" aria-label="WhatsApp"><img src="images/logoWhatsapp.png" alt=""></a></nav></header></body></html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o cardápio do Espresso Royale: cafés especiais, bebidas geladas, doces artesanais e brunch.">
+  <title>Espresso Royale | Cardápio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="cardapio.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Espresso Royale - início"><img class="brand__mark" src="images/LogoCafeteria.png" alt=""><span>Espresso Royale</span></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="index.html">Início</a><a class="is-active" href="cardapio.html" aria-current="page">Cardápio</a><a href="avaliacoes.html">Avaliações</a><a href="galeria.html">Galeria</a></nav>
+    <nav class="social-nav" aria-label="Redes sociais"><a href="#" aria-label="Instagram"><img src="images/LogoInstagram.png" alt=""></a><a href="#" aria-label="TikTok"><img src="images/LogoTikTok.png" alt=""></a><a href="#" aria-label="Facebook"><img src="images/LogoFacebook.png" alt=""></a><a href="#" aria-label="YouTube"><img src="images/LogoYoutube.png" alt=""></a><a href="#" aria-label="WhatsApp"><img src="images/logoWhatsapp.png" alt=""></a></nav>
+  </header>
+
+  <main>
+    <section class="menu-hero" aria-labelledby="menu-title">
+      <div class="menu-hero__content"><p class="eyebrow">Da nossa cozinha para a sua pausa</p><h1 id="menu-title">Um cardápio<br><em>feito para sentir.</em></h1><p>Grãos selecionados, receitas autorais e doces preparados todos os dias. Escolha seu próximo momento favorito.</p></div>
+      <div class="menu-hero__stamp"><span>feito</span><strong>na hora</strong><span>com carinho</span></div>
+    </section>
+
+    <section class="menu-page section" aria-labelledby="menu-list-title">
+      <div class="menu-intro"><div><p class="eyebrow">Escolha seu momento</p><h2 id="menu-list-title">Sabores que<br>combinam com você.</h2></div><p>Nosso menu acompanha o ritmo do seu dia: um espresso rápido, uma conversa sem pressa ou uma mesa cheia de coisas boas.</p></div>
+      <div class="menu-toolbar"><div class="menu-filters" role="group" aria-label="Filtrar itens do cardápio"><button class="filter-btn is-active" type="button" data-filter="all" aria-pressed="true">Tudo</button><button class="filter-btn" type="button" data-filter="coffee" aria-pressed="false">Cafés</button><button class="filter-btn" type="button" data-filter="cold" aria-pressed="false">Gelados</button><button class="filter-btn" type="button" data-filter="tea" aria-pressed="false">Chás</button><button class="filter-btn" type="button" data-filter="sweet" aria-pressed="false">Doces</button><button class="filter-btn" type="button" data-filter="brunch" aria-pressed="false">Brunch</button></div><p class="menu-count" aria-live="polite">12 itens</p></div>
+
+      <div class="menu-grid">
+        <article class="menu-item" data-category="coffee"><div class="menu-item__image menu-item__image--espresso"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Espresso Royale</h3><span>R$ 8,50</span></div><p>Blend da casa, encorpado e com notas de chocolate amargo.</p><span class="menu-item__tag">Favorito da casa</span></div></article>
+        <article class="menu-item" data-category="coffee"><div class="menu-item__image menu-item__image--cappuccino"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Cappuccino da Casa</h3><span>R$ 14,00</span></div><p>Espresso, leite vaporizado e uma espuma cremosa na medida.</p></div></article>
+        <article class="menu-item" data-category="coffee"><div class="menu-item__image menu-item__image--coado"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Coado do Dia</h3><span>R$ 10,00</span></div><p>Um grão especial filtrado na hora para revelar cada detalhe.</p></div></article>
+        <article class="menu-item" data-category="cold"><div class="menu-item__image menu-item__image--coldbrew"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Cold Brew</h3><span>R$ 16,00</span></div><p>Extraído a frio por 18 horas, suave, doce e refrescante.</p><span class="menu-item__tag">Sem pressa</span></div></article>
+        <article class="menu-item" data-category="cold"><div class="menu-item__image menu-item__image--icedlatte"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Iced Latte</h3><span>R$ 15,00</span></div><p>Espresso duplo, leite gelado e gelo para os dias quentes.</p></div></article>
+        <article class="menu-item" data-category="tea"><div class="menu-item__image menu-item__image--tea"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Chá da Estação</h3><span>R$ 11,00</span></div><p>Infusão aromática com frutas e ervas escolhidas na estação.</p></div></article>
+        <article class="menu-item" data-category="sweet"><div class="menu-item__image menu-item__image--cake"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Bolo de Chocolate</h3><span>R$ 15,00</span></div><p>Massa úmida, cobertura intensa e aquele sabor de feito em casa.</p><span class="menu-item__tag">Produção diária</span></div></article>
+        <article class="menu-item" data-category="sweet"><div class="menu-item__image menu-item__image--croissant"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Folhado de Amêndoas</h3><span>R$ 16,00</span></div><p>Camadas douradas, recheio delicado e finalização crocante.</p></div></article>
+        <article class="menu-item" data-category="sweet"><div class="menu-item__image menu-item__image--cookie"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Cookie Royale</h3><span>R$ 10,00</span></div><p>Chocolate, flor de sal e bordas crocantes para acompanhar.</p></div></article>
+        <article class="menu-item" data-category="brunch"><div class="menu-item__image menu-item__image--toast"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Toast Royale</h3><span>R$ 26,00</span></div><p>Pão de fermentação natural, avocado, ovo e ervas frescas.</p><span class="menu-item__tag">Mais pedido</span></div></article>
+        <article class="menu-item" data-category="brunch"><div class="menu-item__image menu-item__image--bowl"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Bowl de Frutas</h3><span>R$ 22,00</span></div><p>Frutas da estação, iogurte, granola artesanal e mel.</p></div></article>
+        <article class="menu-item" data-category="brunch"><div class="menu-item__image menu-item__image--sandwich"></div><div class="menu-item__body"><div class="menu-item__heading"><h3>Sanduíche da Casa</h3><span>R$ 28,00</span></div><p>Pão tostado, queijo cremoso, folhas e molho da casa.</p></div></article>
+      </div>
+      <p class="menu-empty" hidden>Nenhum item encontrado nessa categoria.</p>
+    </section>
+
+    <section class="menu-callout"><div><p class="eyebrow">Para dividir a mesa</p><h2>Seu café fica<br>melhor acompanhado.</h2><p>Peça uma bebida e um doce da vitrine. A combinação muda, mas a vontade de voltar permanece.</p></div><a class="button button--light" href="avaliacoes.html">Veja o que dizem <span>→</span></a></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><div class="footer-brand"><a class="brand" href="index.html"><img class="brand__mark" src="images/LogoCafeteria.png" alt=""><span>Espresso Royale</span></a><p>Seu ponto de pausa, encontro e café especial.</p><div class="footer-socials" aria-label="Redes sociais"><a href="#" aria-label="Instagram"><img src="images/LogoInstagram.png" alt=""></a><a href="#" aria-label="TikTok"><img src="images/LogoTikTok.png" alt=""></a><a href="#" aria-label="Facebook"><img src="images/LogoFacebook.png" alt=""></a><a href="#" aria-label="YouTube"><img src="images/LogoYoutube.png" alt=""></a></div></div><div class="footer-column"><h3>Explore</h3><a href="index.html">Início</a><a href="cardapio.html">Cardápio</a><a href="galeria.html">Galeria</a><a href="avaliacoes.html">Avaliações</a></div><div class="footer-column"><h3>Atendimento</h3><p>Terça a sexta<br><strong>08h às 20h</strong></p><p>Sábado e domingo<br><strong>09h às 19h</strong></p><a href="#">Como chegar <span>→</span></a></div><div class="footer-column footer-newsletter"><h3>Receba novidades</h3><p>Novos sabores, eventos e boas histórias direto no seu e-mail.</p><form><label class="sr-only" for="newsletter-email">Seu melhor e-mail</label><input id="newsletter-email" type="email" placeholder="Seu e-mail" required><button type="submit" aria-label="Cadastrar e-mail">→</button></form></div></div><div class="footer-bottom"><small>© 2026 Espresso Royale. Todos os direitos reservados.</small><div><a href="#">Política de privacidade</a><a href="#">Termos de uso</a><a href="#">Acessibilidade</a></div><small>Feito com café e carinho.</small></div>
+  </footer>
+  <script src="cardapio.js"></script>
+</body>
+</html>
