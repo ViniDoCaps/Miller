@@ -158,4 +158,5 @@ O frontend usa apenas a chave pública `anon`, com RLS habilitado. Visitantes po
 - [25/08/2026] Avaliações reformuladas para receber comentários reais via formulário e armazenamento local
 - [25/08/2026] Galeria reformulada com filtros, mosaico responsivo, legendas e lightbox acessível
 - [25/08/2026] Galeria elevada com showcase editorial, métricas da casa e composição visual assimétrica
+- [25/08/2026] Imagem do bolo reposicionada no bloco inferior direito da galeria
 - [25/08/2026] Integração de avaliações preparada para Supabase com RLS e leitura/envio compartilhados
