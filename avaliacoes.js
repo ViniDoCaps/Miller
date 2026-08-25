@@ -9,7 +9,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const score = document.querySelector('.score-value');
   const stars = document.querySelector('.score-stars');
   const total = document.querySelector('.review-total');
+  const configFileLoaded = Object.prototype.hasOwnProperty.call(window, 'ESPRESSO_SUPABASE');
   const configured = /^https:\/\/[^\s]+/.test(config.url || '') && Boolean(config.anonKey);
+  const localFile = window.location.protocol === 'file:';
   const endpoint = configured ? `${config.url.replace(/\/$/, '')}/rest/v1/reviews` : '';
 
   const setStatus = (message, error = false) => {
@@ -75,10 +77,18 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   const render = async () => {
-    if (!configured) {
+    if (localFile) {
       submitButton.disabled = true;
-      setStatus('Configure o Supabase para ativar o envio público das avaliações.', true);
-      storageNote.textContent = 'A conexão ainda não foi configurada. Preencha supabase-config.js e execute avaliacoes-schema.sql no Supabase.';
+      setStatus('Abra o site por um servidor local (Live Server) para conectar ao Supabase.', true);
+      storageNote.textContent = 'O navegador bloqueia chamadas da API quando a página é aberta diretamente como file://.';
+      renderSummary([]);
+      renderReviews([]);
+      return;
+    }
+    if (!configFileLoaded || !configured) {
+      submitButton.disabled = true;
+      setStatus(!configFileLoaded ? 'O arquivo supabase-config.js não foi carregado.' : 'A URL ou a chave pública do Supabase está inválida.', true);
+      storageNote.textContent = 'Confira supabase-config.js e execute avaliacoes-schema.sql no Supabase.';
       renderSummary([]);
       renderReviews([]);
       return;

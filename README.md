@@ -109,6 +109,8 @@ As avaliações agora estão preparadas para usar Supabase, mas o banco precisa 
 4. Preencha esses dois valores em `supabase-config.js`.
 5. Publique o site em um servidor/hosting. A API não funciona corretamente abrindo os HTML diretamente via `file://`.
 
+Para testar localmente, use a extensão Live Server do VS Code ou execute `python -m http.server 5500` dentro da pasta do projeto e abra `http://localhost:5500/avaliacoes.html`. Se o navegador mostrar uma versão antiga, faça um hard refresh (`Ctrl + F5`).
+
 O frontend usa apenas a chave pública `anon`, com RLS habilitado. Visitantes podem ler e inserir avaliações, mas não podem editar ou apagar registros pelo navegador. Nunca coloque uma chave `service_role` no projeto.
 
 ---
