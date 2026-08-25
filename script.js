@@ -1,8 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('a[href="#"]').forEach((link) => {
+  document.querySelectorAll('.footer-column a[href="#"], .footer-bottom a[href="#"]').forEach((link) => {
     link.setAttribute('aria-disabled', 'true');
     link.setAttribute('tabindex', '-1');
     link.addEventListener('click', (event) => event.preventDefault());
+  });
+
+  document.querySelectorAll('.social-nav a, .footer-socials a').forEach((link) => {
+    const network = link.getAttribute('aria-label') || 'rede social';
+    link.href = 'easter-egg.html';
+    link.setAttribute('aria-label', `${network} — abrir surpresa`);
+    link.removeAttribute('aria-disabled');
+    link.removeAttribute('tabindex');
   });
 
   document.querySelectorAll('.footer-bottom > div').forEach((container) => {
