@@ -99,6 +99,18 @@ Desenvolver um site para a cafeteria fictícia Espresso Royale, com identidade v
 - Testar links, responsividade e navegação em celular
 - Ajustar a newsletter para funcionar com um serviço ou backend, se desejado
 
+## Ativar avaliações compartilhadas
+
+As avaliações agora estão preparadas para usar Supabase, mas o banco precisa ser configurado uma vez:
+
+1. Crie um projeto em [supabase.com](https://supabase.com/).
+2. Abra o SQL Editor e execute o conteúdo de `avaliacoes-schema.sql`.
+3. Em Project Settings → API, copie a Project URL e a chave `anon`/`public`.
+4. Preencha esses dois valores em `supabase-config.js`.
+5. Publique o site em um servidor/hosting. A API não funciona corretamente abrindo os HTML diretamente via `file://`.
+
+O frontend usa apenas a chave pública `anon`, com RLS habilitado. Visitantes podem ler e inserir avaliações, mas não podem editar ou apagar registros pelo navegador. Nunca coloque uma chave `service_role` no projeto.
+
 ---
 
 ## Ideias e Notas
@@ -146,3 +158,4 @@ Desenvolver um site para a cafeteria fictícia Espresso Royale, com identidade v
 - [25/08/2026] Avaliações reformuladas para receber comentários reais via formulário e armazenamento local
 - [25/08/2026] Galeria reformulada com filtros, mosaico responsivo, legendas e lightbox acessível
 - [25/08/2026] Galeria elevada com showcase editorial, métricas da casa e composição visual assimétrica
+- [25/08/2026] Integração de avaliações preparada para Supabase com RLS e leitura/envio compartilhados
