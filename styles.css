@@ -19,6 +19,7 @@ body { margin: 0; background: var(--paper); }
 
 .brand { display: inline-flex; align-items: center; gap: 1rem; color: var(--coffee); text-decoration: none; white-space: nowrap; }
 .brand__mark { width: 82px; height: 108px; flex: 0 0 auto; object-fit: contain; }
+.fuckyou { width: 70px; height: 70px;}
 .brand span { font: 700 clamp(1.6rem, 2.2vw, 2.45rem)/1 'Playfair Display', Georgia, serif; }
 
 .main-nav { display: flex; align-self: stretch; align-items: center; justify-content: center; gap: clamp(1.5rem, 3.5vw, 4.5rem); margin-left: auto; }
@@ -27,7 +28,7 @@ body { margin: 0; background: var(--paper); }
 .main-nav a:hover, .main-nav a.is-active { color: var(--coffee); }
 .main-nav a.is-active::after { transform: scaleX(1); }
 
-.social-nav { display: flex; align-items: center; gap: 1.1rem; padding: 0 1.3rem; min-height: 80px; background: #fff; }
+.social-nav { display: flex; align-items: center; gap: 1.1rem; padding: 0 1.3rem; min-height: 80px;}
 .social-nav a { display: grid; width: 24px; height: 24px; place-items: center; text-decoration: none; transition: transform .2s ease; }
 .social-nav img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
 .social-nav a:hover { transform: translateY(-2px); }
